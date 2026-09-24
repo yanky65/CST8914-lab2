@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Question 2 - CSS</title>
    <style>
-    .mainsection a {
-      text-decoration: none;
-      color: #414040;
-      outline: none;
+    .mainsection h1 {
+      display: inline-block;
+      margin: 0;
+      padding: 20px 35px;
+      background: #e8e6d0 url("lab2/backgroundimg.gif") repeat;
+      color: #000;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 2.25rem;
     }
 
-    
+    .mainsection a {
+      text-decoration: underline;
+      color: #414040;
+    }
+
+    .mainsection a:hover {
+      color: #000;
+      text-decoration-thickness: 2px;
+    }
+
+    .mainsection a:focus-visible {
+      outline: 3px solid #005fcc;
+      outline-offset: 2px;
+    }
     </style>
 </head>
 <body>
 <div class="mainsection">
-<h1><img src="lab2/lab2-imageoftext.gif" alt="Shopping categories"></h1>
+<h1>Shopping categories</h1>
 
 <ul>
   <li><a href="#">Animals</a></li>
@@ -24,7 +43,7 @@
   <li><a href="#">Medicine</a></li>
   <li><a href="#">Music</a></li>
 </ul>
-</div>    
+</div>
 
 </body>
 </html>
